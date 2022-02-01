@@ -1,21 +1,19 @@
 *** Settings ***
-Documentation    Este sera o nosso gerenciador de dependencia.
 
-Library    SeleniumLibrary
-Library    DebugLibrary
+Documentation        Este será o nosso gerenciador de dependências.
+Library              SeleniumLibrary
+#Library              DebugLibrary
+
+###########################
+#         Keywords        #
+###########################
+
+Resource        ../auto/keywords/kws_web.robot
 
 
-######################
-#      Keywords      #
-######################
-Resource    ../auto/Keywords/kws_web.robot
+###########################
+#          Config         #
+###########################
 
-
-
-######################
-#      Config        #
-######################
-
-Resource    hooks.robot
-Resource    hooks.yaml
-
+Resource        hooks.robot
+#Resource        hooks.yaml

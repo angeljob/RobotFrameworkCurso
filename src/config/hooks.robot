@@ -1,7 +1,6 @@
 *** Settings ***
-Documentation    Aqui estarao todos os arquivos de inicialização e finalização dos testes.
-
-Resource    package.robot
+Documentation        Aqui estarão presentes todos os arquivos de inicialização e finalização dos testes.
+Resource            package.robot
 
 *** Keywords ***
 Abrir navegador
@@ -13,5 +12,3 @@ Abrir navegador
 Fechar navegador
     Capture Page Screenshot
     Close Browser
-
-
